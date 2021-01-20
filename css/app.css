@@ -1,0 +1,104 @@
+html:not(.uk-lightbox-page):not(.uk-offcanvas-page):not(.uk-modal-page), body {
+    height: 100%;
+}
+
+body {
+    background: #E5E5E5;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: #353535;
+    font-size: 16px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}
+.layout > div,
+.layout > aside,
+.layout > footer {
+    flex: 0 0 auto;
+}
+.layout > main {
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.uk-alert, .uk-input, .uk-select, .uk-textarea {
+    border-radius: 4px;
+}
+
+.uk-button {
+    
+    font-size: 16px;
+    text-transform: unset;
+}
+* > .uk-button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+* > .uk-button:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*.uk-button-group > .uk-button:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}*/
+
+.uk-button-secondary {
+    background-color: #F2F2F2;
+    color: #505050;
+}
+.uk-button-secondary:hover,
+.uk-button-secondary:focus {
+    background-color: #F2F2F2;
+    color: #505050;
+}
+
+.uk-button-primary {
+    background-color: #FBCA12;
+    color: #353535;
+    border: 1px solid transparent;
+    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), inset 0px -1.5px 0px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), inset 0px -1.5px 0px rgba(0, 0, 0, 0.08);
+}
+.uk-button-primary:hover,
+.uk-button-primary:focus {
+    background-color: #ecbf16;
+    color: #353535;
+}
+
+.uk-card-default {
+    border-radius: 8px;
+}
+
+.uk-description-list > dt {
+    text-transform: unset;
+    color: #fff;
+}
+
+.uk-navbar-dark:not(.uk-navbar-transparent) {
+    background: #2B2B2B;
+    color: #fff;
+}
+.uk-navbar-dark:not(.uk-navbar-transparent) .uk-text-lead {
+    color: #fff;
+}
+.uk-navbar-dark .uk-button {
+    background: #505050;
+    color: #fff;
+    padding: 0 10px 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), inset 0px -1.5px 0px rgba(255, 255, 255, 0.1);
+}
+
+
+.uk-form-icon:not(a):not(button):not(input) {
+    z-index: 1;
+}
+.uk-form-icon:not(.uk-form-icon-flip) ~ .datepicker > .uk-input {
+    padding-left: 40px !important;
+}
