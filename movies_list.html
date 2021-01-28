@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/uikit.css">
+    <link rel="stylesheet" href="./css/datepicker.minimal.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="gray-bg">
+            <!-- продажи общая -->
+            <nav class="uk-navbar-container uk-navbar-dark" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <a class="uk-button uk-button-secondary" href="/"><span uk-icon="sign-out"></span>Выйти</a>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <dl class="uk-description-list uk-margin-remove">
+                            <dt>Кассир — Иван Иванов</dt>
+                            <dd class="uk-text-meta">Начало смены 02.03.2020 в 11:35:38</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item">
+                        <span class="uk-text-lead">10 марта, 12:00</span>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <button class="uk-button uk-button-secondary" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="uk-navbar-container uk-navbar-light" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <div class="uk-button-group">
+                            <button class="uk-button uk-button-primary">Утро</button>
+                            <button class="uk-button uk-button-default">День</button>
+                            <button class="uk-button uk-button-default">Вечер</button>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input" type="text" id="datepicker" placeholder="Выбрать дату">
+                        </div>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-button-group">
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">0+...18+<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                </ul>
+                            </div>
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">Все форматы<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                </ul>
+                            </div>
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">Все залы<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">14 зал</a></li>
+                                    <li><a href="#">2 зал</a></li>
+                                    <li><a href="#">3 зал</a></li>
+                                    <li><a href="#">4 зал</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="uk-section uk-section-xsmall">
+                <div class="uk-container uk-container-expand">
+                    <div class="uk-grid uk-grid-small uk-child-width-1-3@l uk-child-width-1-2@m" uk-grid>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Удивительное путешествие Доктора Дулиттла</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">12+</span>
+                                            </div>
+                                            <span>107 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Человек-невидимка</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">18+</span>
+                                            </div>
+                                            <span>95 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Бладшот</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">16+</span>
+                                            </div>
+                                            <span>113 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Тролли.  Мировой тур</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">6+</span>
+                                            </div>
+                                            <span>92 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Верю в любовь</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">12+</span>
+                                            </div>
+                                            <span>107 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Тайная жизнь</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">16+</span>
+                                            </div>
+                                            <span>134 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Один вдох</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">16+</span>
+                                            </div>
+                                            <span>117 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- film -->
+                        <div>
+                            <a href="#" class="uk-card uk-card-hover uk-link-toggle uk-card-small uk-card-default uk-grid uk-grid-collapse uk-margin film" uk-grid>
+                                <div class="uk-width-auto@s uk-card-media-left">
+                                    <div class="uk-height-1-1 uk-flex uk-flex-middle">
+                                        <div class="uk-cover-container">
+                                            <img class="default-image" width="150" src="https://via.placeholder.com/100x150">
+                                            <img class="cover-image" src="https://via.placeholder.com/400x200" alt="" uk-cover>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex uk-flex-column">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">
+                                            <span class="uk-link-heading">Отель Белград</span>
+                                        </h3>
+                                    </div>
+                                    <div class="uk-card-bottom">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <div>
+                                                <span class="uk-button uk-button-default">12+</span>
+                                            </div>
+                                            <span>100 мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- /films -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /продажи общая -->
+    <!-- canvas-menu -->
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <!--/ canvas-menu -->
+    <script src="./js/jquery-3.5.1.min.js" defer></script>
+    <script src="./js/uikit.js" defer></script>
+    <script src="./js/uikit-icons.js" defer></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/app.js" defer></script>
+</body>
+</html>

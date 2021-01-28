@@ -12,83 +12,85 @@
 </head>
 <body>
     <div class="layout">
-        <!-- продажи общая -->
-        <nav class="uk-navbar-container uk-navbar-dark" uk-navbar>
-            <div class="uk-navbar-left">
-                <div class="uk-navbar-item">
-                    <a class="uk-button uk-button-secondary" href="/"><span uk-icon="sign-out"></span>Выйти</a>
-                </div>
-                <div class="uk-navbar-item">
-                    <dl class="uk-description-list uk-margin-remove">
-                        <dt>Кассир — Иван Иванов</dt>
-                        <dd class="uk-text-meta">Начало смены 02.03.2020 в 11:35:38</dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="uk-navbar-right">
-                <div class="uk-navbar-item">
-                    <span class="uk-text-lead">10 марта, 12:00</span>
-                </div>
-                <div class="uk-navbar-item">
-                    <button class="uk-button uk-button-secondary" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></button>
-                </div>
-            </div>
-        </nav>
-        <nav class="uk-navbar-container uk-navbar-light" uk-navbar>
-            <div class="uk-navbar-left">
-                <div class="uk-navbar-item">
-                    <div class="uk-button-group">
-                        <button class="uk-button uk-button-primary">Утро</button>
-                        <button class="uk-button uk-button-default">День</button>
-                        <button class="uk-button uk-button-default">Вечер</button>
+        <div class="gray-bg">
+            <!-- продажи общая -->
+            <nav class="uk-navbar-container uk-navbar-dark" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <a class="uk-button uk-button-secondary" href="/"><span uk-icon="sign-out"></span>Выйти</a>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <dl class="uk-description-list uk-margin-remove">
+                            <dt>Кассир — Иван Иванов</dt>
+                            <dd class="uk-text-meta">Начало смены 02.03.2020 в 11:35:38</dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="uk-navbar-item">
-                    <div class="uk-inline">
-                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
-                        <input class="uk-input" type="text" id="datepicker" placeholder="Выбрать дату">
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item">
+                        <span class="uk-text-lead">10 марта, 12:00</span>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <button class="uk-button uk-button-secondary" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></button>
                     </div>
                 </div>
-                <div class="uk-navbar-item">
-                    <div class="uk-button-group">
-                        <button class="uk-button uk-button-default uk-text-truncate" type="button">0+...18+<span uk-icon="icon: chevron-down"></span></button>
-                        <div uk-dropdown="mode: click;">
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li><a href="#">0+...18+</a></li>
-                                <li><a href="#">0+...18+</a></li>
-                                <li><a href="#">0+...18+</a></li>
-                                <li><a href="#">0+...18+</a></li>
-                            </ul>
+            </nav>
+            <nav class="uk-navbar-container uk-navbar-light" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <div class="uk-button-group">
+                            <button class="uk-button uk-button-primary">Утро</button>
+                            <button class="uk-button uk-button-default">День</button>
+                            <button class="uk-button uk-button-default">Вечер</button>
                         </div>
-                        <button class="uk-button uk-button-default uk-text-truncate" type="button">Все форматы<span uk-icon="icon: chevron-down"></span></button>
-                        <div uk-dropdown="mode: click;">
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li><a href="#">Все форматы</a></li>
-                                <li><a href="#">Все форматы</a></li>
-                                <li><a href="#">Все форматы</a></li>
-                                <li><a href="#">Все форматы</a></li>
-                            </ul>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input" type="text" id="datepicker" placeholder="Выбрать дату">
                         </div>
-                        <button class="uk-button uk-button-default uk-text-truncate" type="button">Все залы<span uk-icon="icon: chevron-down"></span></button>
-                        <div uk-dropdown="mode: click;">
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li><a href="#">14 зал</a></li>
-                                <li><a href="#">2 зал</a></li>
-                                <li><a href="#">3 зал</a></li>
-                                <li><a href="#">4 зал</a></li>
-                            </ul>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-button-group">
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">0+...18+<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                    <li><a href="#">0+...18+</a></li>
+                                </ul>
+                            </div>
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">Все форматы<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                    <li><a href="#">Все форматы</a></li>
+                                </ul>
+                            </div>
+                            <button class="uk-button uk-button-default uk-text-truncate" type="button">Все залы<span uk-icon="icon: chevron-down"></span></button>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">14 зал</a></li>
+                                    <li><a href="#">2 зал</a></li>
+                                    <li><a href="#">3 зал</a></li>
+                                    <li><a href="#">4 зал</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </nav>
+            <div class="uk-section uk-section-xsmall">
+                <div class="uk-container uk-container-expand">
+                    Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Officia explicabo error corporis quidem nesciunt ex, deserunt quam ipsum laboriosam sunt reiciendis beatae fuga repellat magnam consectetur amet minima, facilis incidunt ipsam commodi ducimus dignissimos eum dolores? Autem porro illum possimus minima sint, eos nemo exercitationem aperiam vel, facilis quos quas deserunt recusandae modi, quia explicabo vitae incidunt! Aut hic cupiditate itaque, magnam? Modi illum, in illo, facere deleniti pariatur excepturi repudiandae exercitationem, sequi quasi qui, unde incidunt quae officiis harum odio et! Recusandae repellendus laborum molestiae perferendis libero placeat blanditiis, quas minima magnam culpa, consequatur velit reiciendis? Porro mollitia neque enim blanditiis placeat ipsum facilis suscipit. Voluptatum, sit vel a, fugiat commodi incidunt maiores consectetur nam necessitatibus voluptas voluptate cumque, facilis? Sed tenetur dolorum, vero velit amet blanditiis eum at enim maxime, nisi praesentium autem molestiae beatae, quasi accusantium recusandae voluptatum magnam. Quod ea impedit corporis pariatur voluptas obcaecati ab temporibus dolor perspiciatis neque in, iusto a repellat aperiam, fuga, explicabo laboriosam reiciendis iure vel, cum voluptate? Tempora rerum consectetur et. Pariatur non rerum praesentium similique sapiente error sint quos voluptas tempore vitae et itaque placeat doloremque magni deleniti corporis excepturi nisi dolores, omnis dolorem nobis eum animi ipsum ab commodi! Minus ducimus sequi minima optio tenetur consequuntur, rerum, voluptate hic aut. Impedit id dolorum sequi ipsum delectus vero eos ea quis expedita eveniet hic itaque autem sunt tenetur quidem praesentium adipisci error optio veritatis nesciunt quo sint voluptate nobis sapiente, reiciendis? Vitae, adipisci. Tempora tenetur aliquid maiores quam, dolore, sequi deserunt nobis blanditiis doloremque, fugiat, necessitatibus illum sint laudantium unde. Similique nesciunt fugit omnis earum, laboriosam nemo enim placeat, at facere tempora iure vel deleniti tempore voluptate modi, officiis blanditiis deserunt? Porro tenetur sunt magni nulla ducimus, ex ea laboriosam voluptates delectus officiis omnis debitis ullam. Quisquam facere totam quas natus optio blanditiis, iure quos pariatur, maiores asperiores sed. Ea unde blanditiis autem eos deserunt aliquam, animi nostrum, ratione suscipit molestias nisi! Qui iure quos ipsam possimus quaerat deleniti nostrum totam autem sed, atque sit cupiditate itaque nam corrupti quo numquam quidem delectus corporis iste earum recusandae quis? Repellat fugiat eaque explicabo, necessitatibus, tempora molestias! Temporibus sequi enim voluptas aut, deleniti quia neque molestias repellat sit a assumenda sapiente quidem reprehenderit suscipit. Aut, maiores! Magnam voluptatum sequi laboriosam assumenda, qui rerum, accusamus reiciendis molestias vero repellat quia, maxime enim eos distinctio et tempore. Magni repudiandae explicabo deleniti inventore eaque eligendi architecto deserunt iure rem, earum beatae in quae molestiae totam doloribus, sint blanditiis delectus impedit, dolorum assumenda! Voluptates, nobis, temporibus! Obcaecati accusantium harum inventore error eos eum doloribus dolorum adipisci excepturi, voluptate minus deserunt blanditiis minima fuga necessitatibus recusandae sed laboriosam tempore, iusto. Deleniti numquam ipsam aut vero ullam nobis cum omnis, id rerum voluptatum odio, repudiandae nesciunt debitis libero inventore quas velit quibusdam hic sint dolore. Cumque eveniet autem soluta blanditiis distinctio minima aspernatur nemo reiciendis esse enim quae magnam, sunt molestias assumenda consequatur officiis quia corporis veniam ea itaque cupiditate qui harum numquam. Harum quibusdam magnam deleniti.
+                </div>
             </div>
-        </nav>
-        <div class="uk-section uk-section-xsmall">
-            <div class="uk-container uk-container-expand">
-                Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Officia explicabo error corporis quidem nesciunt ex, deserunt quam ipsum laboriosam sunt reiciendis beatae fuga repellat magnam consectetur amet minima, facilis incidunt ipsam commodi ducimus dignissimos eum dolores? Autem porro illum possimus minima sint, eos nemo exercitationem aperiam vel, facilis quos quas deserunt recusandae modi, quia explicabo vitae incidunt! Aut hic cupiditate itaque, magnam? Modi illum, in illo, facere deleniti pariatur excepturi repudiandae exercitationem, sequi quasi qui, unde incidunt quae officiis harum odio et! Recusandae repellendus laborum molestiae perferendis libero placeat blanditiis, quas minima magnam culpa, consequatur velit reiciendis? Porro mollitia neque enim blanditiis placeat ipsum facilis suscipit. Voluptatum, sit vel a, fugiat commodi incidunt maiores consectetur nam necessitatibus voluptas voluptate cumque, facilis? Sed tenetur dolorum, vero velit amet blanditiis eum at enim maxime, nisi praesentium autem molestiae beatae, quasi accusantium recusandae voluptatum magnam. Quod ea impedit corporis pariatur voluptas obcaecati ab temporibus dolor perspiciatis neque in, iusto a repellat aperiam, fuga, explicabo laboriosam reiciendis iure vel, cum voluptate? Tempora rerum consectetur et. Pariatur non rerum praesentium similique sapiente error sint quos voluptas tempore vitae et itaque placeat doloremque magni deleniti corporis excepturi nisi dolores, omnis dolorem nobis eum animi ipsum ab commodi! Minus ducimus sequi minima optio tenetur consequuntur, rerum, voluptate hic aut. Impedit id dolorum sequi ipsum delectus vero eos ea quis expedita eveniet hic itaque autem sunt tenetur quidem praesentium adipisci error optio veritatis nesciunt quo sint voluptate nobis sapiente, reiciendis? Vitae, adipisci. Tempora tenetur aliquid maiores quam, dolore, sequi deserunt nobis blanditiis doloremque, fugiat, necessitatibus illum sint laudantium unde. Similique nesciunt fugit omnis earum, laboriosam nemo enim placeat, at facere tempora iure vel deleniti tempore voluptate modi, officiis blanditiis deserunt? Porro tenetur sunt magni nulla ducimus, ex ea laboriosam voluptates delectus officiis omnis debitis ullam. Quisquam facere totam quas natus optio blanditiis, iure quos pariatur, maiores asperiores sed. Ea unde blanditiis autem eos deserunt aliquam, animi nostrum, ratione suscipit molestias nisi! Qui iure quos ipsam possimus quaerat deleniti nostrum totam autem sed, atque sit cupiditate itaque nam corrupti quo numquam quidem delectus corporis iste earum recusandae quis? Repellat fugiat eaque explicabo, necessitatibus, tempora molestias! Temporibus sequi enim voluptas aut, deleniti quia neque molestias repellat sit a assumenda sapiente quidem reprehenderit suscipit. Aut, maiores! Magnam voluptatum sequi laboriosam assumenda, qui rerum, accusamus reiciendis molestias vero repellat quia, maxime enim eos distinctio et tempore. Magni repudiandae explicabo deleniti inventore eaque eligendi architecto deserunt iure rem, earum beatae in quae molestiae totam doloribus, sint blanditiis delectus impedit, dolorum assumenda! Voluptates, nobis, temporibus! Obcaecati accusantium harum inventore error eos eum doloribus dolorum adipisci excepturi, voluptate minus deserunt blanditiis minima fuga necessitatibus recusandae sed laboriosam tempore, iusto. Deleniti numquam ipsam aut vero ullam nobis cum omnis, id rerum voluptatum odio, repudiandae nesciunt debitis libero inventore quas velit quibusdam hic sint dolore. Cumque eveniet autem soluta blanditiis distinctio minima aspernatur nemo reiciendis esse enim quae magnam, sunt molestias assumenda consequatur officiis quia corporis veniam ea itaque cupiditate qui harum numquam. Harum quibusdam magnam deleniti.
-            </div>
+            <!-- /продажи общая -->
         </div>
     </div>
-    <!-- /продажи общая -->
     <!-- canvas-menu -->
     <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">

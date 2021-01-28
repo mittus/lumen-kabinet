@@ -1,16 +1,20 @@
-html:not(.uk-lightbox-page):not(.uk-offcanvas-page):not(.uk-modal-page), body {
+.layout, body, html:not(.uk-lightbox-page):not(.uk-offcanvas-page):not(.uk-modal-page) {
     height: 100%;
 }
 
 body {
-    background: #E5E5E5;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     color: #353535;
     font-size: 16px;
 }
 
+.gray-bg {
+    background: #f6f6f6;
+}
+
 .layout {
+    background: #f6f6f6;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -31,7 +35,7 @@ body {
 }
 
 .uk-button {
-    
+    padding: 0 10px 2px;
     font-size: 16px;
     text-transform: unset;
 }
@@ -44,6 +48,14 @@ body {
     border-bottom-right-radius: 4px;
 }
 
+.uk-navbar-light .uk-navbar-item {
+    min-height: 65px;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
 /*.uk-button-group > .uk-button:last-of-type {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -74,6 +86,7 @@ body {
 
 .uk-card-default {
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .uk-description-list > dt {
@@ -91,7 +104,7 @@ body {
 .uk-navbar-dark .uk-button {
     background: #505050;
     color: #fff;
-    padding: 0 10px 2px;
+    /*padding: 0 10px 2px;*/
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), inset 0px -1.5px 0px rgba(255, 255, 255, 0.1);
 }
 
@@ -101,4 +114,157 @@ body {
 }
 .uk-form-icon:not(.uk-form-icon-flip) ~ .datepicker > .uk-input {
     padding-left: 40px !important;
+}
+
+
+/* films */
+
+.film {
+    font-size: 14px;
+}
+
+.film a {
+    cursor: pointer;
+}
+.film .uk-cover-container {
+    display: block;
+}
+
+/*.film .uk-link:hover,
+.film a:hover {
+    color: #6d48b7;
+}*/
+
+/*.film .uk-card-secondary {
+    background: #3a3a3a;
+}*/
+.film .uk-card-body,
+.film .uk-card-bottom {
+    padding: 10px 20px;
+
+}
+.film .uk-card-bottom {
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.film .uk-card-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #353535;
+    font-weight: 500;
+}
+.film .uk-list {
+    margin: 0;
+    font-size: 14px;
+}
+.film .uk-list > li {
+    margin: 0;
+}
+
+/*.film .age {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #5748b7;
+}*/
+
+.film .uk-nav-header {
+    font-weight: 700;
+    text-transform: inherit;
+}
+.film .uk-nav-header:not(:first-child) {
+    margin-top: 5px;
+}
+
+.film .uk-nav > .uk-text-success {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/*.film .uk-subnav .uk-first-column {
+    padding-left: 0;
+}*/
+.film .uk-subnav>* {
+    padding-left: 10px;
+}
+
+.film .uk-card-media-left {
+/*    height: 100%;
+    width: 200px;
+    position: relative;*/
+    width: 150px;
+    background: #000;
+}
+
+
+
+a.uk-link-heading:hover,
+.uk-link-heading a:hover,
+.uk-link-toggle:hover
+.uk-link-heading,
+.uk-link-toggle:focus
+.uk-link-heading {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 960px) {
+    .uk-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 640px) {
+    .uk-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 500px) {
+    .film .default-image {
+        display: block;
+    }
+    .film .cover-image {
+        display: none;
+    }
+    .film .uk-width-expand\@s {
+        flex: 1;
+        min-width: 1px;
+    }
+}
+
+@media (max-width: 499px) {
+    .film .default-image {
+        display: none;
+    }
+    .film .cover-image {
+        display: block;
+    }
+    .film .uk-cover-container {
+        height: 100%;
+    }
+    .film .uk-cover-container .uk-cover {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        transform: none;
+    }
+    .film .uk-card-media-left {
+        width: 100%;
+    }
+    .film .uk-card-media-left > div {
+        max-height: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: block;
+    }
+    .film .uk-card-media-left > div > img {
+        width: 100%;
+        height: auto;
+    }
 }
