@@ -31,7 +31,7 @@
                         <span class="uk-text-lead">10 марта, 12:00</span>
                     </div>
                     <div class="uk-navbar-item">
-                        <button class="uk-button uk-button-secondary" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></button>
+                        <button id="menu-btn" class="uk-button uk-button-secondary" uk-icon="menu" uk-toggle="target: #offcanvas-flip"></button>
                     </div>
                 </div>
             </nav>
@@ -318,11 +318,79 @@
     </div>
     <!-- /продажи общая -->
     <!-- canvas-menu -->
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="offcanvas-flip" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <!-- <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button> -->
+            <div class="uk-padding-large uk-padding-remove-horizontal" uk-height-viewport="offset-top: true">
+                <div class="uk-child-width-1-2@xs uk-child-width-1-3@s uk-grid-match menu-items uk-padding-large uk-padding-remove-vertical uk-margin-medium-bottom" uk-grid>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon union"></span>
+                            <p>Товары</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon online"></span>
+                            <p>Онлайн</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon booking"></span>
+                            <p>Бронь</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon return-tickets"></span>
+                            <p>Возврат билетов</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon return-food"></span>
+                            <p>Возврат товаров</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-card-large uk-text-center">
+                            <span class="uk-icon discount"></span>
+                            <p>Скидочные карты</p>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="uk-padding-large uk-padding-remove-vertical">
+                    <h3 class="uk-modal-title">Дополнительно</h3>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-4@s uk-grid-match menu-items" uk-grid>
+                        <div>
+                            <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-text-center">
+                                <span class="uk-icon report-z"></span>
+                                <p>Печатать Z-отчет</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-text-center">
+                                <span class="uk-icon report-x"></span>
+                                <p>Печатать X-отчет</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-text-center">
+                                <span class="uk-icon report"></span>
+                                <p>Отчеты</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-card uk-card-default uk-card-hover uk-card-body uk-link-toggle uk-text-center">
+                                <span class="uk-icon union"></span>
+                                <p>Монитор зрителя</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--/ canvas-menu -->
