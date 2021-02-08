@@ -261,6 +261,10 @@ a.uk-link-heading:hover,
     background-position: -384px 0;
 }
 
+.product-items {
+    background: #fff;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
     .uk-child-width-1-2\@xxs>* {
         width: 50%;

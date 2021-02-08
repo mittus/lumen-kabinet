@@ -15,4 +15,19 @@ $(document).on('click', 'button[id=menu-btn]', function() {
         _attr = _this.attr('aria-expanded') == 'true' ? 'close' : 'menu';
 
     _this.attr('uk-icon', _attr);
-})
+}).on('click', '.qty > .btn', function() {
+    var qty = $(this).parent(),
+        cart_id = qty.data('cart_id'),
+        input = qty.find('input'),
+        cl = $(this).data('act'),
+        val = Number.parseInt(input.val());
+
+    if(cl=='minus') {
+        if(val <= 1) {
+            return false;
+        } else val = val - 1;
+    } else if(cl=='plus') {
+        val = val + 1;
+    }
+    input.val(val);
+});
