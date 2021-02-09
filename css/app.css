@@ -12,6 +12,9 @@ body {
 .gray-bg {
     background: #f6f6f6;
 }
+.white-bg {
+    background: #fff;
+}
 
 .layout {
     background: #f6f6f6;
@@ -119,14 +122,17 @@ body {
 
 /* films */
 
-.film {
+.film,
+.session {
     font-size: 14px;
 }
 
-.film a {
+.film a,
+.session a {
     cursor: pointer;
 }
-.film .uk-cover-container {
+.film .uk-cover-container,
+.session .uk-cover-container {
     display: block;
 }
 
@@ -139,26 +145,32 @@ body {
     background: #3a3a3a;
 }*/
 .film .uk-card-body,
-.film .uk-card-bottom {
+.film .uk-card-bottom,
+.session .uk-card-body,
+.session .uk-card-bottom {
     padding: 10px 20px;
 
 }
-.film .uk-card-bottom {
+.film .uk-card-bottom,
+.session .uk-card-bottom {
     margin-top: auto;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.film .uk-card-title {
+.film .uk-card-title,
+.session .uk-card-title {
     margin-bottom: 0;
     font-size: 20px;
     color: #353535;
     font-weight: 500;
 }
-.film .uk-list {
+.film .uk-list,
+.session .uk-list {
     margin: 0;
     font-size: 14px;
 }
-.film .uk-list > li {
+.film .uk-list > li,
+.session .uk-list > li {
     margin: 0;
 }
 
@@ -261,8 +273,31 @@ a.uk-link-heading:hover,
     background-position: -384px 0;
 }
 
+.bg-white {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
 .product-items {
     background: #fff;
+}
+
+.uk-label-default {
+    background: #FEF4CD;
+    color: #353535;
+    opacity: .9;
+    margin-top: 5px;
+}
+
+.uk-breadcrumb > * > * {
+    font-size: 1.1rem;
+}
+.uk-breadcrumb > * > .uk-text-muted {
+    font-size: .875rem;
+    margin-left: 20px;
+}
+
+.uk-breadcrumb > li > .title {
+    font-weight: 600;
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
