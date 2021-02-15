@@ -238,7 +238,8 @@ a.uk-link-heading:hover,
     margin-top: 20px;
 }
 
-.menu-items .uk-icon {
+.menu-items .uk-icon,
+.basket-menu-items .uk-icon {
     background-image: url(../images/sprite-menu.png);
     background-color: #fff;
     height: 48px;
@@ -299,6 +300,20 @@ a.uk-link-heading:hover,
 .uk-breadcrumb > li > .title {
     font-weight: 600;
 }
+
+
+.basket-bottom {
+    margin-top: auto;
+}
+
+.basket-menu-items .uk-card > p {
+    margin: 0;
+    font-size: .8rem;
+}
+.basket-menu-items .uk-card:hover > p {
+    text-decoration: underline;
+}
+
 
 @media (min-width: 320px) and (max-width: 479px) {
     .uk-child-width-1-2\@xxs>* {
