@@ -14,7 +14,15 @@ $(document).on('click', 'button[id=menu-btn]', function() {
     var _this = $(this),
         _attr = _this.attr('aria-expanded') == 'true' ? 'close' : 'menu';
 
+
+    if(_attr == 'menu') {
+        UIkit.modal($('#offcanvas-flip')).hide();
+        UIkit.modal($('#modal-products')).hide();
+    }
+
     _this.attr('uk-icon', _attr);
+
+
 }).on('click', '.qty > .btn', function() {
     var qty = $(this).parent(),
         cart_id = qty.data('cart_id'),
