@@ -31,7 +31,7 @@ $(document).on('click', 'button[id=menu-btn]', function() {
         val = Number.parseInt(input.val());
 
     if(cl=='minus') {
-        if(val <= 1) {
+        if(val <= 0) {
             return false;
         } else val = val - 1;
     } else if(cl=='plus') {

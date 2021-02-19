@@ -149,8 +149,14 @@ body {
 .session .uk-card-body,
 .session .uk-card-bottom {
     padding: 10px 20px;
-
 }
+
+.products .uk-card-body,
+.products .uk-card-bottom {
+    padding: 10px 20px 10px 10px;
+}
+
+.products .uk-card-bottom,
 .film .uk-card-bottom,
 .session .uk-card-bottom {
     margin-top: auto;
@@ -201,7 +207,9 @@ body {
 .film .uk-subnav>* {
     padding-left: 10px;
 }
-
+.products .uk-card-media-left {
+    width: 150px;
+}
 .film .uk-card-media-left {
 /*    height: 100%;
     width: 200px;
