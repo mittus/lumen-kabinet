@@ -253,6 +253,12 @@ a.uk-link-heading:hover,
     height: 48px;
     width: 48px;
 }
+.menu-items a {
+    padding: 15px;
+}
+.menu-items p {
+    margin-top: 10px;
+}
 .union {
     background-position: 0px 0;
 }
