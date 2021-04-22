@@ -38,4 +38,19 @@ $(document).on('click', 'button[id=menu-btn]', function() {
         val = val + 1;
     }
     input.val(val);
+}).on('click', '[data-filter]', function() {
+    var filters = $(this).data('filter'),
+    dropdown = $(this).parents('[uk-dropdown]');
+
+    UIkit.dropdown(dropdown).hide();
+
+    if (typeof filterShows === "function") { 
+        filterShows(filters);
+    }
 });
+
+/* Функция для теста, надо удалить */
+function filterShows(filters) {
+    console.log(filters);
+}
+/* !!!!!!!!!! */
